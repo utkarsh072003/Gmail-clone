@@ -11,7 +11,7 @@ const useGetAllEmails = ()=>{
     useEffect(()=>{
         const fetchEmails = async() =>{
             try {
-                const res = await axios.get("https://gmail-clone-3-cfsb.onrender.com/v1/email/getallemails",{
+                const res = await axios.get("https://gmail-clone-3-cfsb.onrender.com/api/v1/email/getallemails",{
                     withCredentials:true
                 });
                 
