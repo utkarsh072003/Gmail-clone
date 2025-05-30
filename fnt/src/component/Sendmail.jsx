@@ -21,7 +21,7 @@ const Sendmail = () => {
     e.preventDefault();
     dispatch(setOpen(false));
     try {
-      const res= await axios.post("http://localhost:8080/api/v1/email/create", formData,{
+      const res= await axios.post("https://gmail-clone-3-cfsb.onrender.com/api/v1/email/create", formData,{
         header:{
           'Content-Type':"application/json"
         },
