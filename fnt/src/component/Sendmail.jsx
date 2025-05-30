@@ -22,7 +22,7 @@ const Sendmail = () => {
     dispatch(setOpen(false));
     try {
       const res= await axios.post("https://gmail-clone-3-cfsb.onrender.com/api/v1/email/create", formData,{
-        header:{
+        headers:{
           'Content-Type':"application/json"
         },
         withCredentials:true
