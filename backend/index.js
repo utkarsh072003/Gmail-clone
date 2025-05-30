@@ -18,12 +18,14 @@ app.use(cookieParser());
 
 const corsOptions = {
   origin: [
-    'http://localhost:5173', // for local development
-    'https://gmail-clone-m16r3isqr-utkarsh-kumars-projects-b1798ef0.vercel.app' // deployed frontend
+    'http://localhost:5173', // Local development
+    'https://gmail-clone-wine-alpha.vercel.app' // Deployed frontend
   ],
-  credentials: true,
+  credentials: true
 };
+
 app.use(cors(corsOptions));
+
 
 
 app.use("/api/v1/user",userRoute);
