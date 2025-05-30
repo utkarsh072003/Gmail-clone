@@ -21,7 +21,7 @@ function Navbar() {
   const dispatch = useDispatch();
   const logoutHandler = async () => {
     try {
-      const res = await axios.get('http://localhost:8080/api/v1/user/logout')
+      const res = await axios.get('https://gmail-clone-3-cfsb.onrender.com/api/v1/user/logout')
       console.log(res);
       toast.success(res.data.message)
       dispatch(setAuthUser(null));
